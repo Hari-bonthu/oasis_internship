@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 97%;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(66deg, #28ffff91, #555555);
+    border: none;
+    border-radius: 48px 48px 16px 16px;
+    padding: 2.6rem;
+    margin-top: 3.2rem;
+    max-width: 66rem;
+    height: 20rem;
+}
+
+h1 {
+    font-size: 1.1rem;
+    color: #3d3333;
+    font-weight: 700;
+    letter-spacing: .1rem;
+
+}
+
+.temp {
+    display: inline;
+}
+
+.temp input {
+    max-width: 22rem;
+    height: 1.6rem;
+    border: none;
+    border-radius: 16px;
+    padding: .4rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3d3333;
+  
+}
+
+label {
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .6rem;
+}
+
+.units {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.radio {
+    display: inline-flex;
+    padding: 12px;
+    margin: 8px;
+}
+
+button {
+    width: 6rem;
+    height: 2.3rem;
+    color: #f9f9f9;
+    font-size:1rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    background: linear-gradient(to left, #1c1e1c, #1ac91ac8);
+    border: none;
+    border-radius: 4px;
+    align-self: center;
+}
+
+#result {
+    font-size: 1.2rem;
+    font-weight: 600;
+}

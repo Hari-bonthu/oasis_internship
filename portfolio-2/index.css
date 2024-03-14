@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap');
+
+
+@import 'utilities.css';
+:root{
+--primary: rgb(29, 221, 189);
+--bgDark: rgb(12, 12, 12);
+--white: rgb(250, 250, 250);
+--secondary: rgb(0, 59, 50);
+--bgLight: rgb(190, 181, 181);
+--content: rgb(70, 70, 70);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: var(--bgDark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+    padding-bottom: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+header  nav {
+    padding: 2rem 2rem;
+    font-size: clamp(.6rem,2.5vw,1.3rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+nav  a {
+    text-decoration: none;
+    color: var(--bgLight);
+}
+
+
+ul {
+    display: inline-flex;
+    gap: 1.6rem;
+    flex-wrap: nowrap;
+
+}
+
+li a.active,
+li a:hover {
+    color: var(--white);
+    transition: all .3s ease;
+}
+
+.contact-btn {
+    cursor: pointer;
+    color: var(--bgLight);
+    padding: .1rem .6rem;
+    margin: 0;
+    letter-spacing: .05rem;
+    font-size: 1rem;
+    background: transparent;
+    overflow: hidden;
+    border: solid var(--primary) 1px;
+    transition: all .4s;
+}
+
+.contact-btn:hover {
+    color: var(--bgDark);
+    background-color: var(--primary);
+}
+
+.hero {
+    display: flex;
+    gap: 3rem;
+    flex-direction:row;
+    padding: 2rem 3rem;
+}
+
+.hero_left img {
+    width: 18rem;
+    border:solid var(--primary) 2px;
+    border-radius: 999px;
+}
+
+.hero_right {
+    color: var(--white);
+    display: grid;
+    gap: 2rem;
+
+}
+
+.hero_right p {
+    font-size: clamp(.6rem,2vw,1.3rem);
+}
+
+.hero_right  a {
+    font-size: 2rem;
+    padding: .6rem;
+    color: var(--white);
+}
+
+.hero_right  a:hover {
+    color: var(--primary);
+    transition: .3s ease;
+}
+
+.hero_right span {
+    color: var(--primary);
+    font-size: 2.6rem;
+}
+
+.wrapper {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+    font-size: 86%;
+    margin: 3.2rem;
+}
+
+#about {
+    background-color: #fff;
+
+}
+
+.heading-main {
+    display: block;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    color: var(--primary);
+}
+
+.heading-sub {
+    display: block;
+    text-align: center;
+    color: var(--secondary);
+    font-size: 1.3rem;
+    font-weight: 600;
+    max-width: 80rem;
+    margin: auto;
+    line-height: 1.6
+}
+
+.heading-content p {
+    font-size: 1rem;
+    color: var(--content);
+    line-height: 1.7;
+    margin-bottom: 2.6rem;
+}
+
+.heading-content p:nth-child(1) {
+    margin-top: 2.3rem;
+}
+
+.skill {
+    background-color: var(--bgDark);
+    clip-path: polygon(23% 6%, 100% 0, 100% 100%, 73% 94%, 0 100%, 0 0);
+    padding: 2rem 0;
+
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.3rem;
+}
+
+.skills-list {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: clamp(.6rem,2vw,1.3rem);
+    background: var(--secondary);
+    border-radius: 2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background:var(--bgLight);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    font-weight: 600;
+    color: black;
+  }
+
+  .card p {
+    font-weight: 500;
+  }
+  
+  .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+
+
+#contact {
+    background-color: var(--bgDark);
+    clip-path: polygon(23% 4%, 100% 0, 100% 100%, 73% 96%, 0 100%, 0 0);
+    padding: 2rem 0;
+    margin-bottom: .3rem;
+}
+
+#contact .wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-container {
+    background-color: var(--secondary);
+    padding: 1.6rem 2rem;
+    min-width: 60vw;
+    border-radius: .6rem;
+}
+
+.form {
+    display: grid;
+    align-items: center;
+    gap: 1.3rem;
+    padding: 2% 4%;
+}
+
+form label {
+    color: var(--bgDark);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: left
+}
+form input {
+ color: var(--bgDark);
+ padding: 1rem;
+ background-color: var(--white);
+ border: none;
+ border-radius: 10px;
+ letter-spacing: .1rem;
+}
+
+form textarea {
+    color: var(--bgDark);
+    padding: 1rem;
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    min-height: 4rem;
+}
+
+.sbt-btn {
+    width: 140px;
+    height: 3rem;
+    background: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    font-size: 20px;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+    z-index: 1;
+
+}
+
+.sbt-btn:hover {
+background: var(--primary) ;
+border: 2px solid var(--bgDark);
+transition: .5s ;
+color: #fff;
+}
+
+
+.footer-container {
+    background:var(--bgDark) ;
+    clip-path: polygon(0 0,23% 4%,100% 0,100% 100%,0 100%);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 4%;
+}
+
+.footer-note {
+    width: 40%;
+    max-width: 50rem
+}
+
+.footer-sub {
+    margin-top: 2rem;
+    color:var(--bgLight);
+    font-size: clamp(.6rem,2vw,1rem);
+    line-height: 1.7
+}
+
+.footer-social h2 { 
+    letter-spacing: .3rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-social a {
+     color:var(--primary);
+     padding: 1rem .4rem;
+     font-size: 1.4rem;
+}
+
+
+@media  screen and (max-width:548px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

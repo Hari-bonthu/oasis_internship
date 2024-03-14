@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+
+      <div class="temp">
+        <label for="temperature">Temperature:</label>
+        <input
+          type="text"
+          id="temperature"
+          placeholder="Enter temperature"
+          required
+        />
+      </div>
+
+      <div class="units">
+        <label>Choose input unit:</label>
+
+        <div class="radio">
+          <input
+            type="radio"
+            name="unit"
+            id="celsius"
+            value="celsius"
+            checked
+          />
+          <label for="celsius">Celsius</label>
+        </div>
+
+        <div class="radio">
+          <input type="radio" name="unit" id="fahrenheit" value="fahrenheit" />
+          <label for="fahrenheit">Fahrenheit</label>
+        </div>
+
+        <div class="radio">
+          <input type="radio" name="unit" id="kelvin" value="kelvin" />
+          <label for="kelvin">Kelvin</label>
+        </div>
+      </div>
+
+      <button onclick="convertTemperature()">Convert</button>
+
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
